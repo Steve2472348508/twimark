@@ -132,13 +132,29 @@ a{text-decoration: none}
     color: #fff;
 }
 @media screen and (max-width:880px){
+    html,body{
+        font-size: 14px;
+    }
     .container .header{
         flex-direction: column;
+    }
+    .container .header h1{
+        font-size: 34px;
     }
     .container .main{
         margin-top: 40px;
     }
+    .container .main h2{
+        font-size: 28px;
+    }
+    .container .main .contact h3{
+        font-size: 18px;
+    }
     .footer{
         margin-top: 0;
+    }
+    .main .contact .section .item span{
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 }
