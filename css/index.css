@@ -20,7 +20,7 @@ a{text-decoration: none}
 }
 /* header */
 .container .header{
-    width: 880px;
+    max-width: 880px;
     height: 150px;
     margin: 0 auto;
     display: flex;
@@ -58,7 +58,7 @@ a{text-decoration: none}
 /* main */
 .container .main{
     padding: 20px 40px;
-    width: 880px;
+    max-width: 880px;
     height: auto;
     margin: 0 auto;
     background: #fff;
@@ -130,4 +130,15 @@ a{text-decoration: none}
     text-align: center;
     line-height: 60px;
     color: #fff;
+}
+@media screen and (max-width:880px){
+    .container .header{
+        flex-direction: column;
+    }
+    .container .main{
+        margin-top: 40px;
+    }
+    .footer{
+        margin-top: 0;
+    }
 }
